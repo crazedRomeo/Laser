@@ -1,0 +1,21 @@
+body {
+  background-color: seashell;
+}
+
+#canvases{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+canvas{
+  border: solid 1px antiquewhite;
+box-shadow:
+  0 7.1px 6.3px -10px rgba(0, 0, 0, 0.025),
+  0 57px 50px -10px rgba(0, 0, 0, 0.05)
+;
+  background: white;
+  border-radius: 1rem;
+  margin: 2rem;
+}

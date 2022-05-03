@@ -1,0 +1,32 @@
+/* Add CSS styles here! */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    @apply bg-indigo-50 font-sans;
+}
+
+.btn {
+    @apply py-2 font-semibold rounded-lg text-indigo-500 bg-indigo-100 cursor-pointer;
+}
+
+.btn-disabled {
+    @apply py-2 font-semibold rounded-lg text-indigo-200 bg-indigo-50 cursor-not-allowed;
+}
+
+.btn-primary {
+    @apply py-2 font-semibold rounded-lg text-indigo-50 shadow-md bg-indigo-500 cursor-pointer;
+}
+
+.btn-primary-disabled {
+    @apply py-2 font-semibold rounded-lg text-white bg-indigo-300 cursor-not-allowed;
+}
+
+.btn-group-top {
+    @apply rounded-b-none;
+}
+
+.btn-group-bottom {
+    @apply rounded-t-none;
+}

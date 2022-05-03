@@ -1,0 +1,95 @@
+img {
+    display: block;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 7px 7px 27px #f0f0f0, -7px -7px 27px #ffffff;
+}
+
+p code {
+    color: #6b7280 !important;
+}
+
+.markdown-section p.warn {
+    background: #eef2ff !important;
+    border-radius: 5px;
+}
+
+.tip {
+    border-radius: 0 5px 5px 0 !important;
+    background-color: #fef2f2 !important;
+}
+
+.markdown-section .info p.tip::before {
+    content: "i";
+    background-color: #34d399;
+}
+
+.markdown-section .info p.tip {
+    background-color: #ecfdf5 !important;
+    border-left-color: #34d399;
+}
+
+.markdown-section .question p.tip::before {
+    content: "?";
+    background-color: #fbbf24;
+}
+
+.markdown-section .question p.tip {
+    background-color: #fffbeb !important;
+    border-left-color: #fbbf24;
+}
+
+.markdown-section .file-path p.tip::before {
+    content: "</>";
+    background-color: #111827;
+    width: 30px !important;
+    border-radius: 10px;
+    left: -17px;
+    top: 15px;
+}
+
+.markdown-section .file-path p.tip {
+    background-color: #374151 !important;
+    border-left-color: #111827;
+}
+
+.file-path p,
+.file-path strong {
+    color: #f9fafb !important;
+}
+
+.file-path p code {
+    background-color: #4b5563 !important;
+    color: #d1d5db !important;
+}
+
+.markdown-section .todo p.tip::before {
+    content: "TODO";
+    background-color: #60a5fa;
+    width: 45px !important;
+    border-radius: 10px;
+    left: -24px;
+    top: 15px;
+}
+
+.markdown-section .todo p.tip {
+    background-color: #eff6ff !important;
+    border-left-color: #60a5fa;
+}
+
+.ghost {
+    margin-top: 40px;
+    position: relative;
+    border: #9ca3af 2px dashed;
+    border-radius: 5px;
+    background: #f9fafb;
+}
+
+div.ghost {
+    padding: 10px;
+    padding-bottom: 20px;
+}
+
+.ghost h3 {
+    margin-top: 0 !important;
+}

@@ -1,0 +1,121 @@
+/* Add CSS styles here! */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bezier-anim: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+canvas {
+  @apply rounded-lg;
+}
+
+.blocklyScrollbarHandle {
+  fill: #e0e7ff;
+}
+
+.animate-spin-once {
+  animation: spin 1s var(--bezier-anim) 1;
+}
+
+.navbar {
+  flex: 0 1 auto;
+}
+
+.content {
+  flex: 1 1 auto;
+  height: calc(100% - 18rem);
+}
+
+.preview-height {
+  height: calc(100% - 3.425rem);
+}
+
+.split {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+}
+
+.gutter {
+  @apply bg-indigo-100;
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+
+.gutter.gutter-horizontal {
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAeCAYAAADkftS9AAAAIklEQVQoU2M4c+bMfxAGAgYYmwGrIIiDjrELjpo5aiZeMwF+yNnOs5KSvgAAAABJRU5ErkJggg==");
+  cursor: col-resize;
+}
+
+.gutter.gutter-vertical {
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAFAQMAAABo7865AAAABlBMVEVHcEzMzMzyAv2sAAAAAXRSTlMAQObYZgAAABBJREFUeF5jOAMEEAIEEFwAn3kMwcB6I2AAAAAASUVORK5CYII=");
+  cursor: row-resize;
+}
+
+body {
+  @apply bg-indigo-50 font-sans;
+}
+
+.btn {
+  @apply py-2 font-semibold rounded-lg text-indigo-500 bg-indigo-100 cursor-pointer;
+}
+
+.btn-disabled {
+  @apply py-2 font-semibold rounded-lg text-indigo-200 bg-indigo-50 cursor-not-allowed;
+}
+
+.btn-primary {
+  @apply py-2 font-semibold rounded-lg text-indigo-50 shadow-md bg-indigo-500 cursor-pointer;
+}
+
+.btn-primary-disabled {
+  @apply py-2 font-semibold rounded-lg text-white bg-indigo-300 cursor-not-allowed;
+}
+
+.btn-group-top {
+  @apply rounded-b-none;
+}
+
+.btn-group-bottom {
+  @apply rounded-t-none;
+}
+
+.split-horizontal {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+.split-vertical {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.gutter {
+  flex-shrink: 0;
+  flex-grow: 0;
+}
+
+.gutter-horizontal {
+  cursor: col-resize;
+}
+.gutter-vertical {
+  cursor: row-resize;
+}
+.gutter:hover {
+  background: #8cF;
+}
+.gutter-dragging:hover {
+  background: cyan;
+}
+
+.pane {
+  flex-shrink: 1;
+  flex-grow: 1;
+  position: relative;
+}
+.pane-dragging {
+  overflow: hidden;
+}

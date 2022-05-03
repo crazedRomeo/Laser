@@ -1,0 +1,49 @@
+.fill-height {
+  height: calc(100vh - 12rem);
+}
+
+.blocklyMainBackground {
+  stroke: none !important;
+}
+
+.blocklyToolboxDiv {
+  background-color: #e0e7ff;
+  border-radius: 0 0.5rem 0.5rem 0;
+}
+
+.blocklyFlyoutBackground {
+  fill: #a5b4fc !important;
+  fill-opacity: 0.5 !important;
+}
+
+.blocklyScrollbarVertical.blocklyFlyoutScrollbar {
+  display: none !important;
+}
+
+code[class*="language-"],
+pre {
+    @apply rounded-2xl;
+    height: calc(100% - 7rem) !important;
+    overflow-y: scroll;
+    background: #eef2ff !important;
+    color: #6366f1 !important;
+    max-height: 200px;
+}
+
+pre .linenumber {
+    opacity: 0.4;
+}
+
+pre[class*="language-"]::-moz-selection,
+pre[class*="language-"] ::-moz-selection,
+code[class*="language-"]::-moz-selection,
+code[class*="language-"] ::-moz-selection {
+    background: #eef2ff !important;
+}
+
+pre[class*="language-"]::selection,
+pre[class*="language-"] ::selection,
+code[class*="language-"]::selection,
+code[class*="language-"] ::selection {
+    background: #eef2ff !important;
+}
